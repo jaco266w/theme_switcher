@@ -1,0 +1,51 @@
+[data-theme="light"] {
+    --header-bg-color: antiquewhite;
+    --main-bg-color: antiquewhite;
+    --footer-bg-color: antiquewhite;
+    --bg-color: rgb(255, 221, 177);
+    --font-color: black;
+}
+
+[data-theme="dark"] {
+    --header-bg-color: rgb(36, 36, 36);
+    --main-bg-color: rgb(112, 112, 112);
+    --footer-bg-color: rgb(36, 36, 36);
+    --bg-color: rgb(0, 0, 0);
+    --font-color: white;
+}
+
+[data-theme="hawaii"] {
+    --header-bg-color: rgb(4, 255, 0);
+    --main-bg-color: rgb(255, 0, 0);
+    --footer-bg-color: rgb(0, 0, 255);
+    --bg-color: rgb(255, 221, 177);
+    --font-color: white;
+}
+
+body {
+    color: var(--font-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--header-bg-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--font-color);
+    margin-bottom: 50px;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    border: 2px solid var(--font-color);
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    padding: 20px;
+    border: 2px solid var(--font-color);
+}
